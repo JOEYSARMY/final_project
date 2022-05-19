@@ -1,0 +1,96 @@
+.navbar {
+	list-style-type: none; /* Removes bullet points */
+	overflow: hidden;
+	background-color: #4E8098;
+	vertical-align: top;
+	display: inline-block;
+	width: 98%;
+}
+
+.navbar li {
+	float: left; /* Unstacks links */
+}
+
+.navbar li a {
+	display: block;
+	text-align: center;
+	padding: 15px 15px;
+	text-decoration: none; /* Removes underline from link */
+	color: white; /* Text color white */
+}
+
+.navbar li a:hover {
+	background-color: #A31621;
+}
+		
+.grid-container {
+	display: grid;
+	grid-gap: 10px;
+	background-color: #CED3DC;
+}
+
+/* Changed to #82ACBF for better readability. */
+.grid-item {
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+	background-color: #82ACBF;
+	border: solid #90C2E7 10px;
+}
+
+.item1 {
+	grid-column: 1 / span 3;
+	grid-row: 1;
+}
+
+.item2 {
+	grid-column: 1;
+	grid-row: 2 / span 4;
+	height: 93%;
+}
+
+.item3 {
+	grid-column: 2;
+	grid-row: 2 / span 4;
+}
+
+.item4 {
+	grid-column: 3;
+	grid-row: 2 / span 4;
+}
+
+.item5 {
+	grid-column: 1 / span 3;
+	grid-row: 6;
+}
+
+/* Media queries not fully fleshed out yet. Ideally, the site would stay more proportionate as the width shrinks. Height/Width % *almost* does this. Needs work */
+/* EDIT: Changed! Now singular column, it's long but it looks nice when you scroll down instead of the 3 columns. Thanks for the suggestion! */
+@media (max-width: 1024px) {
+	.item3 {
+		grid-column: 1;
+		grid-row: 6 / span 2;
+	}
+	
+	.item4 {
+		grid-column: 1;
+		grid-row: 8 / span 2;
+	}
+	
+	.item5 {
+		grid-row: 10 / span 2;
+	}
+}
+
+/* These next media queries shrink the text size. It's actually quite readable on a phone, looks goofy on high resolution monitors though. */
+@media (max-width: 768px) {
+	p {
+		font-size: 75%;
+	}
+}
+
+@media (max-width: 600px) {
+	p {
+		font-size: 60%;
+	}
+}

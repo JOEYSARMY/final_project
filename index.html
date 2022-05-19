@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!-- https://coolors.co/a31621-fcf7f8-ced3dc-4e8098-90c2e7 this is my color palate -->
+<!-- Still choosing a palate for dark mode. Text will be white on black for readability -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="KCC Home Page">
+		<meta name="keywords" content="HTML, CSS, JavaScript, Dogs">
+		<meta name="author" content="Joey Jones">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="images/x-icon" href="./images/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/indexStyle.css">
+		<title>KCC</title> <!-- Oh my, forgot to change the title from the template I used. used to be called "Grid Stuff" lol -->
+		
+		<script>
+			function changeBackground() {
+				document.body.style.background = 'black';
+			}
+		</script>
+	
+	</head>
+
+	<body>
+		<section>
+			<div>
+				<ul class="navbar">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="diet.html">Dietary information</a></li>
+				</ul>
+			</div>
+		</section>
+	
+		<div class="grid-container">
+			<div class="grid-item item1">KCC</div>
+			
+			<div class="grid-item item2">
+			
+				<div>
+					<img src="images/homeOne.jpg" width="350" height="250" alt="King Charles picture one">
+				</div>
+				
+				<div>
+					<img src="images/homeTwo.jpg" width="350" height="250" alt="King Charles picture two">
+				</div>
+				
+				<div>
+					<img src="images/homeThree.jpg" width="350" height="250" alt="King Charles picture three">
+				</div>
+				
+				<a href="./gallery.html">[More]</a>
+			
+			</div>
+			
+			<div class="grid-item item3">
+				<h3>Welcome to KCC!</h3>
+				<p> This is an informational page about dogs, specifically the breed King Charles Cavalier.</p>
+				<br>
+				<p>On the right hand side, there are additional resources that are related to the information you will find on this page. Use the top navigation bar to navigate the page.</p>
+				<br>
+				<p>Need a place to start? Head over to the about page for general information about the breed. This page will guide you through the site, otherwise feel free to explore!</p>
+			</div>
+			
+			<div class="grid-item item4">
+				<h3>External sites & resources</h3>
+				<a href="https://www.akc.org/dog-breeds/cavalier-king-charles-spaniel/">AKC.org (General breed info)</a>
+				<br>
+				<a href="https://dogtime.com/dog-breeds/cavalier-king-charles-spaniel#/slide/1">Dogtime.com (Extensive info)</a>
+				<br>
+				<a href="https://www.petfinder.com/dog-breeds/cavalier-king-charles-spaniel/">Petfinder.com (Adoption info)</a>
+			</div>
+			
+			<div class="grid-item item5">
+				<p>Constructed with care by Joey Jones</p>
+				<button onClick="changeBackground()">Change background</button>
+			</div>
+			
+		</div>
+	</body>
+	
+</html>
